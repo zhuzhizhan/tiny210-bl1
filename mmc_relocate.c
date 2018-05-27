@@ -11,12 +11,12 @@ void copy_code_to_dram(void)
 	if (ch == 0xEB000000)
 	{
 
-		ret = copy_bl2(0, UBOOT_LOAD_BASE, 2048,(unsigned int *)NEXT_FIRMWARE_LDS_BASE, 0);
+		ret = copy_bl2(0, UBOOT_LOAD_BASE, UBOOT_LOAD_SIZE,(unsigned int *)NEXT_FIRMWARE_LDS_BASE, 0);
 	}
 
 	else if (ch == 0xEB200000)
 	{
-		ret = copy_bl2(2, UBOOT_LOAD_BASE, 2048,(unsigned int *)NEXT_FIRMWARE_LDS_BASE, 0);
+		ret = copy_bl2(2, UBOOT_LOAD_BASE, UBOOT_LOAD_SIZE,(unsigned int *)NEXT_FIRMWARE_LDS_BASE, 0);
 	}
 	else
 		return;
