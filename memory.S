@@ -2,8 +2,8 @@
 
 // MemControl	BL=4, 1Chip, DDR2 Type, dynamic self refresh, force precharge, dynamic power down off
 #define DMC0_MEMCONTROL			0x00202400
-// MemConfig0	256MB config, 8 banks,Mapping Method[12:15]0:linear, 1:linterleaved, 2:Mixed
-#define DMC0_MEMCONFIG_0		0x20F00313	
+// MemConfig0	512MB config, 8 banks,Mapping Method[12:15]0:linear, 1:linterleaved, 2:Mixed
+#define DMC0_MEMCONFIG_0		0x20E00313
 // MemConfig1
 #define DMC0_MEMCONFIG_1		0x00F00313	
 
